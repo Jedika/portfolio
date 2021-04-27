@@ -2,5 +2,8 @@
   "routes": [
     { "handle": "filesystem" },
     { "src": "/.*", "dest": "/index.html" }
+  ],
+  "files": [
+    "dist/spa"
   ]
 }
