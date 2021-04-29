@@ -6,7 +6,7 @@
         style="padding-bottom: 20px"
       >
         <div class="full-width">
-          <h3 class="text-white text-weight-bold">Développeur & Freelancer</h3>
+          <h3 class="text-white text-weight-bold">Développeur & Freelanceur</h3>
         </div>
       </div>
 
@@ -21,7 +21,7 @@
           <b class="underline">{{ info.key }}</b> :
           <span v-html="info.value"></span>
         </p>
-        <a style="text-decoration: none" href="slide1.jpg" download>
+        <a style="text-decoration: none" href="CV-gabriel.zip" download>
           <q-btn color="primary" label="Télecharger le C.V" no-caps />
         </a>
       </div>
@@ -44,7 +44,7 @@
             class="row justify-center items-center q-pa-lg col-sm-4 col-xs-12"
           >
             <q-avatar size="100px" icon="computer" />
-            <p class="col-12 text-center">Developpement web</p>
+            <p class="col-12 text-center">Développement web</p>
           </div>
 
           <div
@@ -52,6 +52,13 @@
           >
             <q-avatar size="100px" icon="devices" />
             <p class="col-12 text-center">Responsive design</p>
+          </div>
+
+          <div
+            class="row justify-center items-center q-pa-lg col-sm-4 col-xs-12"
+          >
+            <q-avatar size="100px" icon="smartphone" />
+            <p class="col-12 text-center">Développement mobile</p>
           </div>
         </div>
       </q-card-section>

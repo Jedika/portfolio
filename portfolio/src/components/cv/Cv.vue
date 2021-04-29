@@ -125,13 +125,12 @@ export default defineComponent({
       {
         title: 'Integration VueJS - site "Exval"',
         subtitle: 'février 2021',
-        description: 'Integration de maquette en font end.',
+        description: 'Integration de maquette en font end avec VueJs.',
       },
       {
         title: 'Integration Wordpress - site "Group Global World"',
         subtitle: 'Octobre 2020',
-        description:
-          'Master en informatique / parcours Génie Logiciel et Bases de données.',
+        description: "Integration d'une maquette en wordpress.",
       },
       {
         title: 'Développeur front end - Fofifa Madagascar',
@@ -162,7 +161,7 @@ Back end:  NestJs (graphql et Apollo server)
       CSS3: 0.69,
       javascript: 0.67,
       vueJs: 0.85,
-      reactJs: 0.45,
+      reactJs: 0.52,
       expressJs: 0.85,
       nestJs: 0.88,
       git: 0.65,

@@ -101,7 +101,7 @@ module.exports = configure(function (ctx) {
       // directives: [],
 
       // Quasar plugins
-      plugins: []
+      plugins: ['Meta']
     },
 
     // animations: 'all', // --- includes all animations
@@ -110,22 +110,53 @@ module.exports = configure(function (ctx) {
 
     // https://v2.quasar.dev/quasar-cli/developing-ssr/configuring-ssr
     ssr: {
-      pwa: false,
-      // manualStoreHydration: true,
+      pwa: true, // should a PWA take over (default: false), or just a SPA?
+
+      manualStoreHydration: false,
+          // Manually hydrate the store.
+          // This is detailed in a subsection below
+
+      manualPostHydrationTrigger: false,
+          // Manually trigger the post-hydration logic on client-side.
+          // This is detailed in a subsection below
+
       prodPort: 3000, // The default port that the production server should use
                       // (gets superseded if process.env.PORT is specified at runtime)
 
       maxAge: 1000 * 60 * 60 * 24 * 30,
-        // Tell browser when a file from the server should expire from cache (in ms)
+          // Tell browser when a file from the server should expire from cache
+          // (the default value, in ms)
+          // Has effect only when server.static() is used
 
-      chainWebpackWebserver (/* chain */) {
-        //
+      // List of SSR middleware files (src-ssr/middlewares/*). Order is important.
+      middlewares: [
+        // ...
+        'render' // Should not be missing, and should be last in the list.
+      ],
+
+      // optional; add/remove/change properties
+      // of production generated package.json
+      extendPackageJson (pkg) {
+        // directly change props of pkg;
+        // no need to return anything
       },
 
-      middlewares: [
-        ctx.prod ? 'compression' : '',
-        'render' // keep this as last one
-      ]
+      // optional;
+      // handles the Webserver webpack config ONLY
+      // which includes the SSR middleware
+      extendWebpackWebserver (cfg) {
+        // directly change props of cfg;
+        // no need to return anything
+      },
+
+      // optional; EQUIVALENT to extendWebpack() but uses webpack-chain;
+      // handles the Webserver webpack config ONLY
+      // which includes the SSR middleware
+      chainWebpackWebserver (chain) {
+        // chain is a webpack-chain instance
+        // of the Webpack configuration
+      }
+
     },
 
     // https://v2.quasar.dev/quasar-cli/developing-pwa/configuring-pwa
