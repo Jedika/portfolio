@@ -37,48 +37,48 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import { useMeta, Meta } from 'quasar';
+// import { useMeta, Meta } from 'quasar';
 
-const accueilMeta: Meta = {
-  // sets document title
-  title: 'Developpeur web fullstack et mobile',
-  // optional; sets final title as "Index Page - My Website", useful for multiple level meta
-  titleTemplate: (title: any) => `${title} - Gabriel Kwan - C.V / Portfolio`,
+// const accueilMeta: Meta = {
+//   // sets document title
+//   title: 'Developpeur web fullstack et mobile',
+//   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
+//   titleTemplate: (title: any) => `${title} - Gabriel Kwan - C.V / Portfolio`,
 
-  // meta tags
-  meta: {
-    description: {
-      name: 'Curriculum Vitae et portfofio',
-      content: `Gabriel Kwan...
+//   // meta tags
+//   meta: {
+//     description: {
+//       name: 'Curriculum Vitae et portfofio',
+//       content: `Gabriel Kwan...
 
-Je suis un Développeur web fullstack et mobile... Qui suis-je ?
-Développeur & Freelanceur... COMPÉTENCES: Front-end et back-end
-`,
-    },
-    keywords: {
-      name:
-        'freelanceur c.v developpeur web mobile fullstack front-end back-end VueJs Quasar-Framework electron',
-      content: 'Quasar website',
-    },
-    equiv: {
-      'http-equiv': 'Content-Type',
-      content: 'text/html; charset=UTF-8',
-    },
-    // note: for Open Graph type metadata you will need to use SSR, to ensure page is rendered by the server
-    // ogTitle: {
-    //   property: 'og:title',
-    //   // optional; similar to titleTemplate, but allows templating with other meta properties
-    //   template(ogTitle: any) {
-    //     return `${ogTitle} - My Website`;
-    //   },
-    // },
-  },
-};
+// Je suis un Développeur web fullstack et mobile... Qui suis-je ?
+// Développeur & Freelanceur... COMPÉTENCES: Front-end et back-end
+// `,
+//     },
+//     keywords: {
+//       name:
+//         'freelanceur c.v developpeur web mobile fullstack front-end back-end VueJs Quasar-Framework electron',
+//       content: 'Quasar website',
+//     },
+//     equiv: {
+//       'http-equiv': 'Content-Type',
+//       content: 'text/html; charset=UTF-8',
+//     },
+//     // note: for Open Graph type metadata you will need to use SSR, to ensure page is rendered by the server
+//     // ogTitle: {
+//     //   property: 'og:title',
+//     //   // optional; similar to titleTemplate, but allows templating with other meta properties
+//     //   template(ogTitle: any) {
+//     //     return `${ogTitle} - My Website`;
+//     //   },
+//     // },
+//   },
+// };
 
 export default defineComponent({
   name: 'Accueil',
   setup() {
-    useMeta(accueilMeta);
+    // useMeta(accueilMeta);
     return {
       slide: ref(1),
       autoplay: ref(true),
