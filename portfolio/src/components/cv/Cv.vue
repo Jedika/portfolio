@@ -123,17 +123,26 @@ export default defineComponent({
 
     const experiences = [
       {
-        title: 'Integration VueJS - site "Exval"',
+        title:
+          "Conception et réalisation d'une application mobile d' écriture avec ionic",
+        subtitle: 'Mais 2021',
+        description:
+          'Une application qui permet aux écrivains de planifier leurs séances d’écriture.',
+      },
+      {
+        title: 'Collaborateur en tant qu\'integrateur VueJS - site "Exval"',
         subtitle: 'février 2021',
         description: 'Integration de maquette en font end avec VueJs.',
       },
       {
-        title: 'Integration Wordpress - site "Group Global World"',
+        title:
+          'Collaborateur en tant qu\'integrateur Wordpress - site "Group Global World"',
         subtitle: 'Octobre 2020',
         description: "Integration d'une maquette en wordpress.",
       },
       {
-        title: 'Développeur front end - Fofifa Madagascar',
+        title:
+          'Collaborateur en tant que développeur front end - Fofifa Madagascar',
         subtitle: 'Janvier 2020',
         description: `Réalisation de l’interface web pour une application de gestion de la planification de mission et d’enquete avec Vuejs et Quasar framework.
 `,
@@ -149,7 +158,7 @@ Back end:  NestJs (graphql et Apollo server)
       },
       {
         title:
-          'Stage - Développeur PHP  - Direction des Etude  et Travaux Topographiques (DETT).  ',
+          'Stage - Développeur PHP  - Direction des Etude  et Travaux Topographiques (DETT).',
         subtitle: '05/11/2018 - 25/01/2019',
         description:
           'conception et réalisation d’une application web pour la suivie des activités des circonscriptions  topographiques de MADAGASCAR',

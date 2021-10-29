@@ -3,6 +3,7 @@
     <Accueil id="home" />
     <Moi id="moi" />
     <Cv id="CV" />
+    <Portfolio id="Portfolio" />
     <!-- <Contact /> -->
   </q-page>
 </template>
@@ -16,6 +17,7 @@ export default defineComponent({
     Accueil: require('../components/accueil/Accueil.vue').default,
     Moi: require('../components/moi/QuiSuisJe.vue').default,
     Cv: require('../components/cv/Cv.vue').default,
+    Portfolio: require('../components/portfolio/Portfolio.vue').default,
     // Contact: require('../components/contact/Contact.vue').default,
   },
   setup() {

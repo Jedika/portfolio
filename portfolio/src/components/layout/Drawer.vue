@@ -42,9 +42,7 @@
             <q-icon color="white" :name="item.icon" />
           </q-item-section>
 
-          <q-item-section style="text-transform: uppercase" class="no-margin">{{
-            item.label
-          }}</q-item-section>
+          <q-item-section class="no-margin">{{ item.label }}</q-item-section>
         </q-item>
 
         <q-separator dark />
@@ -96,6 +94,7 @@ export default defineComponent({
       { icon: 'home', label: 'Accueil', id: '#home' },
       { icon: 'perm_identity', label: 'Qui suis-je ?', id: '#moi' },
       { icon: 'fas fa-id-card', label: 'C.V', id: '#CV' },
+      { icon: 'business_center', label: 'Portfolio', id: '#Portfolio' },
     ];
 
     return { drawer, platform, items };
