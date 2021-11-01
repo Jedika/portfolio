@@ -80,6 +80,7 @@ export default defineComponent({
     const slide = ref(1);
     const splitterModel = ref(220);
     const insideModel = ref(50);
+
     return { slide, splitterModel, insideModel };
   },
 });
